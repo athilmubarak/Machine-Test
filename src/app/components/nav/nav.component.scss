@@ -1,0 +1,22 @@
+.nav-menu {
+    font-size: 22px;
+    margin-right: 15px;
+    -webkit-text-stroke-width: thin;
+
+    &.selected {
+        text-shadow: 2px 4px 4px rgba(62, 63, 66, 0.6);
+    }
+}
+
+.page-name {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.items-end {
+    align-items: end;
+}

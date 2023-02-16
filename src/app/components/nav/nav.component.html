@@ -1,0 +1,14 @@
+<div class="row p-3 shadow">
+    <div class="col-12 col-sm-12 col-md-6">
+        <div class="page-name">
+            {{ selected_menu | titlecase }}
+        </div>
+    </div>
+    <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-end items-end">
+        <div class="nav-menu"
+            [ngClass]="{'text-success selected': selected_menu == menu, 'cursor-pointer': selected_menu != menu}"
+            *ngFor="let menu of menus" routerLink="/{{ menu }}" (click)="selected_menu = menu;">
+            {{ menu | titlecase }}
+        </div>
+    </div>
+</div>
